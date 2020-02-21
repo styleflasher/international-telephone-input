@@ -91,7 +91,7 @@ class Data extends AbstractHelper
                 'template' => 'ui/form/field',
                 'elementTmpl' => 'MaxMage_InternationalTelephoneInput/form/element/telephone',
                 'tooltip' => [
-                    'description' => 'For delivery questions.',
+                    'description' => __('For delivery questions.'),
                     'tooltipTpl' => 'ui/form/element/helper/tooltip'
                 ],
             ],
