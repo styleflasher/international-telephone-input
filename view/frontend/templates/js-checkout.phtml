@@ -7,11 +7,15 @@
 <script type="application/javascript">
     require([
         'jquery',
-        'intlTelInput'
-    ], function ($) {
+        'internationalTelephoneInput'
+    ], function ($, internationalTelephoneInput) {
+
         maxMageTelephoneRenderComplete = function() {
 
-            $("input[name='telephone']").intlTelInput(<?php echo $block->phoneConfig(); ?>)
+            var elem = $("input[name='telephone']").each(function() {
+                internationalTelephoneInput(this, <?php echo $block->phoneConfig(); ?>);
+            });
+
         }
     });
 </script>

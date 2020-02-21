@@ -4,13 +4,4 @@ var config = {
         "intlTelInputUtils": 'MaxMage_InternationalTelephoneInput/js/utils',
         "internationalTelephoneInput": 'MaxMage_InternationalTelephoneInput/js/internationalTelephoneInput'
     },
-
-    shim: {
-        'intlTelInput': {
-            'deps':['jquery', 'knockout']
-        },
-        'internationalTelephoneInput': {
-            'deps':['jquery', 'intlTelInput']
-        }
-    }
 };
